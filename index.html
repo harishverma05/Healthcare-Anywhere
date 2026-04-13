@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HealthBridge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+  <nav>
+    <h2 class="logo">Healthcare Anywhere</h2>
+    <ul>
+      <li><a href="index.html" class="find-btn">Home</a></li>
+      <li><a href="#about" class="find-btn">About</a></li>
+      <li><a href="finddoctor.html" class="find-btn">Find Doctor</a></li>
+      <li><a href="privacypolicy.html" class="find-btn">Privacy Policy</a></li>
+    </ul>
+    <button class="emergency-btn" onclick="sendSOS()">Call Emergency</button>
+  </nav>
+
+  <div class="hero-content">
+    <div class="text">
+      <h1>
+        Get best quality <span>health care</span> services <br>
+        at reasonable cost
+      </h1>
+      <p>Find doctors, hospitals and emergency help instantly.</p>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search doctor or hospital">
+        <input type="text" placeholder="Set your location">
+        <button>🔍</button>
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="https://cdn.prod.website-files.com/66bd394eedeb9d6ee29898c6/682f5450a046c241920c1e6f_Three%20doctors%20standing%20side%20by%20side%2C%20crossing%20their%20arms.jpg" alt="Doctors Image">
+    </div>
+  </div>
+
+</header>
+
+<!-- FEATURES -->
+<section>
+  <h2>Features</h2>
+  <div class="features">
+    <div class="card">🗺️ Live Location</div>
+    <div class="card">💬 AI Chatbot</div>
+    <div class="card">🚑 Emergency SMS</div>
+    <div class="card">👨‍⚕️ Find Doctor</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-container">
+
+    <div class="about-text">
+      <h2>About <span>HealthBridge</span></h2>
+      <p>
+        HealthBridge is a modern healthcare platform designed to connect patients 
+        with doctors instantly. Our goal is to provide fast, reliable, and 
+        affordable healthcare services using smart technology.
+      </p>
+
+      <div class="about-features">
+        <div>✔ Instant doctor connection</div>
+        <div>✔ Real-time location tracking</div>
+        <div>✔ Emergency support system</div>
+        <div>✔ AI-powered health assistance</div>
+      </div>
+
+      <button class="about-btn">Learn More</button>
+    </div>
+
+    <div class="about-img">
+      <img src="https://cdn-icons-png.flaticon.com/512/387/387561.png" alt="Doctor Icon">
+    </div>
+
+  </div>
+</section>
+
+<!-- MAP -->
+<section>
+  <h2>Map</h2>
+  <div id="map"></div>
+</section>
+
+<!-- EMERGENCY -->
+<section>
+  <h2>🚨 Emergency</h2>
+  <input type="text" id="phone" placeholder="Enter phone number">
+  <button onclick="sendLocationSMS()">Send SOS</button>
+</section>
+
+<!-- CHATBOT -->
+<section>
+  <h2>AI Doctor Chat</h2>
+  <div id="chatBox"></div>
+  <input type="text" id="chatInput" placeholder="Ask something...">
+  <button onclick="sendMessage()">Send</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h2 class="footer-logo">HealthBridge</h2>
+      <p>
+        Connecting patients with doctors instantly. 
+        Your trusted healthcare partner for emergencies and daily care.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="finddoctor.html">Find Doctor</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Features</h3>
+      <p>📍 Live Location</p>
+      <p>🤖 AI Doctor</p>
+      <p>🚑 Emergency Help</p>
+      <p>🏥 Find Hospitals</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>📧 ansarishabbir2096@gmail.com</p>
+      <p>📞 +91 8795456612</p>
+      <p>📍 India</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 HealthBridge | All Rights Reserved
+  </div>
+</footer>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+<!-- GOOGLE MAP API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqJKoW78tRrowWi1K-XbKyWv1W5eDlHaY&callback=initMap" async defer></script>
+
+</body>
+</html>
